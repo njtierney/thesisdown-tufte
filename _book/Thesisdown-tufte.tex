@@ -1,4 +1,4 @@
-\documentclass[]{book}
+\documentclass[]{article}
 \usepackage{lmodern}
 \usepackage{amssymb,amsmath}
 \usepackage{ifxetex,ifluatex}
@@ -24,13 +24,11 @@
 \usepackage[margin=1in]{geometry}
 \usepackage{hyperref}
 \hypersetup{unicode=true,
-            pdftitle={A Minimal Example of writing a thesis using bookdown and tufte},
-            pdfauthor={Nicholas Tierney},
             pdfborder={0 0 0},
             breaklinks=true}
 \urlstyle{same}  % don't use monospace font for urls
 \usepackage{natbib}
-\bibliographystyle{apalike}
+\bibliographystyle{plainnat}
 \usepackage{color}
 \usepackage{fancyvrb}
 \newcommand{\VerbBar}{|}
@@ -116,58 +114,51 @@
 }
 
 \setlength{\droptitle}{-2em}
-  \title{A Minimal Example of writing a thesis using bookdown and tufte}
-  \pretitle{\vspace{\droptitle}\centering\huge}
-  \posttitle{\par}
-  \author{Nicholas Tierney}
-  \preauthor{\centering\large\emph}
-  \postauthor{\par}
-  \predate{\centering\large\emph}
-  \postdate{\par}
-  \date{2017-02-26}
+  \title{}
+  \pretitle{\vspace{\droptitle}}
+  \posttitle{}
+  \author{}
+  \preauthor{}\postauthor{}
+  \date{}
+  \predate{}\postdate{}
 
 \usepackage{booktabs}
 
 \usepackage{amsthm}
-\newtheorem{theorem}{Theorem}[chapter]
-\newtheorem{lemma}{Lemma}[chapter]
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}{Lemma}[section]
 \theoremstyle{definition}
-\newtheorem{definition}{Definition}[chapter]
-\newtheorem{corollary}{Corollary}[chapter]
-\newtheorem{proposition}{Proposition}[chapter]
+\newtheorem{definition}{Definition}[section]
+\newtheorem{corollary}{Corollary}[section]
+\newtheorem{proposition}{Proposition}[section]
 \theoremstyle{definition}
-\newtheorem{example}{Example}[chapter]
+\newtheorem{example}{Example}[section]
 \theoremstyle{remark}
 \newtheorem*{remark}{Remark}
 \begin{document}
-\maketitle
 
 {
-\setcounter{tocdepth}{1}
+\setcounter{tocdepth}{2}
 \tableofcontents
 }
-\chapter{Prerequisites}\label{prerequisites}
+\section{Copyright in relation to This
+Thesis}\label{copyright-in-relation-to-this-thesis}
 
-This is a \emph{sample} book written in \textbf{Markdown}. You can use
-anything that Pandoc's Markdown supports, e.g., a math equation
-\(a^2 + b^2 = c^2\).
+\copyright Copyright 2017 by John Doe. All rights reserved.
 
-The \textbf{bookdown} package can be installed from CRAN or Github:
+\textbf{Statement of Original Authorship}
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\KeywordTok{install.packages}\NormalTok{(}\StringTok{"bookdown"}\NormalTok{)}
-\CommentTok{# or the development version}
-\CommentTok{# devtools::install_github("rstudio/bookdown")}
-\end{Highlighting}
-\end{Shaded}
+The Work contained in this thesis has not been previously submitted to
+meet requirements for an award at this or any other higher education
+institution. To the best of my knowledge and belief, the thesis contains
+no material previously published or written by another person except
+where due reference is made.
 
-Remember each Rmd file contains one and only one chapter, and a chapter
-is defined by the first-level heading \texttt{\#}.
+\textbf{Signature}
 
-To compile this example to PDF, you need to install XeLaTeX.
+\textbf{Date}
 
-\chapter{Introduction}\label{intro}
+\section{Introduction}\label{intro}
 
 You can label chapter and section titles using \texttt{\{\#label\}}
 after them, e.g., we can reference Chapter \ref{intro}. If you do not
@@ -246,27 +237,25 @@ You can write citations, too. For example, we are using the
 \textbf{bookdown} package \citep{R-bookdown} in this sample book, which
 was built on top of R Markdown and \textbf{knitr} \citep{xie2015}.
 
-\chapter{Literature}\label{literature}
+\section{Literature}\label{literature}
 
 Here is a review of existing methods.
 
-\chapter{Methods}\label{methods}
+\section{Methods}\label{methods}
 
 We describe our methods in this chapter.
 
-\chapter{Applications}\label{applications}
+\section{Applications}\label{applications}
 
 Some \emph{significant} applications are demonstrated in this chapter.
 
-\section{Example one}\label{example-one}
+\subsection{Example one}\label{example-one}
 
-\section{Example two}\label{example-two}
+\subsection{Example two}\label{example-two}
 
-\chapter{Final Words}\label{final-words}
+\section{Final Words}\label{final-words}
 
 We have finished a nice book.
-
-\bibliography{packages.bib,book.bib}
 
 
 \end{document}
