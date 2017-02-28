@@ -2,7 +2,7 @@
 knit: bookdown::preview_chapter
 ---
   
-# Copyright in relation to This Thesis
+# Copyright in relation to this thesis
   
   \copyright Copyright 2017 by John Doe. All rights reserved.
 
