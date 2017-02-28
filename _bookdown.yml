@@ -1,4 +1,18 @@
 book_filename: "Thesisdown-tufte"
-language:
-  ui:
-    chapter_name: "Chapter "
+
+language: 
+  ui: 
+    chapter_name: "Chapter " 
+    
+rmd_files: [
+  
+  "copyright.Rmd",
+  
+  "01-intro.Rmd",
+  "02-literature.Rmd",
+  "03-method.Rmd",
+  "04-application.Rmd",
+  "05-summary.Rmd",
+  "06-references.Rmd"
+  
+]
