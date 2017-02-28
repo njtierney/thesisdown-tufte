@@ -11,6 +11,8 @@ description: "This is a minimal example of using the bookdown package to write a
 output: 
   bookdown::tufte_book2: 
     toc: true
+    lot: true
+    lof: true
 ---
 
 # Prerequisites
