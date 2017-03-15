@@ -160,8 +160,9 @@
 \setcounter{tocdepth}{1}
 \tableofcontents
 }
-\chapter{Copyright in relation to this
-thesis}\label{copyright-in-relation-to-this-thesis}
+\chapter{Copyright}\label{copyright}
+
+\textbf{Copyright in relation to this thesis}
 
 \copyright Copyright 2017 by John Doe. All rights reserved.
 
@@ -176,6 +177,25 @@ where due reference is made.
 \textbf{Signature}
 
 \textbf{Date}
+
+\chapter{Dedication}\label{dedication}
+
+This thesis is dedicated to \ldots{}.
+
+\chapter{Abstract}\label{abstract}
+
+\chapter{Keywords}\label{keywords}
+
+Statistics, Mathematics, Magic, Harry Potter, Wand creation, Olivander,
+Latin
+
+\chapter{Acknowledgements}\label{acknowledgements}
+
+First and foremost, my thanks go to \ldots{}
+
+\ldots{}
+
+Last, and certainly not least, I thanks..
 
 \chapter{Introduction}\label{intro}
 
@@ -258,21 +278,125 @@ was built on top of R Markdown and \textbf{knitr} \citep{xie2015}.
 
 \chapter{Literature Review}\label{literature-review}
 
-\chapter{Methods}\label{methods}
+\chapter{Paper Title}\label{paper-title}
 
-We describe our methods in this chapter.
+\section{Abstract}\label{abstract-1}
 
-\chapter{Applications}\label{applications}
+\section{Keywords}\label{keywords-1}
 
-Some \emph{significant} applications are demonstrated in this chapter.
+\section{Introduction}\label{introduction}
 
-\section{Example one}\label{example-one}
+\section{Methods}\label{methods}
 
-\section{Example two}\label{example-two}
+\section{Results}\label{results}
 
-\chapter{Final Words}\label{final-words}
+example plot:
 
-We have finished a nice book.
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{library}\NormalTok{(ggplot2)}
+
+\KeywordTok{qplot}\NormalTok{(diamonds$clarity)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Thesisdown-tufte_files/figure-latex/unnamed-chunk-1-1.pdf}
+
+Example table.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{knitr::}\KeywordTok{kable}\NormalTok{(}\KeywordTok{head}\NormalTok{(mtcars),}
+             \DataTypeTok{caption =} \StringTok{"testing!"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{table}
+
+\caption{\label{tab:unnamed-chunk-2}testing!}
+\centering
+\begin{tabular}[t]{l|r|r|r|r|r|r|r|r|r|r|r}
+\hline
+  & mpg & cyl & disp & hp & drat & wt & qsec & vs & am & gear & carb\\
+\hline
+Mazda RX4 & 21.0 & 6 & 160 & 110 & 3.90 & 2.620 & 16.46 & 0 & 1 & 4 & 4\\
+\hline
+Mazda RX4 Wag & 21.0 & 6 & 160 & 110 & 3.90 & 2.875 & 17.02 & 0 & 1 & 4 & 4\\
+\hline
+Datsun 710 & 22.8 & 4 & 108 & 93 & 3.85 & 2.320 & 18.61 & 1 & 1 & 4 & 1\\
+\hline
+Hornet 4 Drive & 21.4 & 6 & 258 & 110 & 3.08 & 3.215 & 19.44 & 1 & 0 & 3 & 1\\
+\hline
+Hornet Sportabout & 18.7 & 8 & 360 & 175 & 3.15 & 3.440 & 17.02 & 0 & 0 & 3 & 2\\
+\hline
+Valiant & 18.1 & 6 & 225 & 105 & 2.76 & 3.460 & 20.22 & 1 & 0 & 3 & 1\\
+\hline
+\end{tabular}
+\end{table}
+
+\section{Discussion}\label{discussion}
+
+\section{Conclusion}\label{conclusion}
+
+\section{Acknowledgements}\label{acknowledgements-1}
+
+\chapter{Paper Title}\label{paper-title-1}
+
+\section{Abstract}\label{abstract-2}
+
+\section{Keywords}\label{keywords-2}
+
+\section{Introduction}\label{introduction-1}
+
+\section{Methods}\label{methods-1}
+
+\section{Results}\label{results-1}
+
+\section{Discussion}\label{discussion-1}
+
+\section{Conclusion}\label{conclusion-1}
+
+\section{Acknowledgements}\label{acknowledgements-2}
+
+\chapter{Paper Title}\label{paper-title-2}
+
+\section{Abstract}\label{abstract-3}
+
+\section{Keywords}\label{keywords-3}
+
+\section{Introduction}\label{introduction-2}
+
+\section{Methods}\label{methods-2}
+
+\section{Results}\label{results-2}
+
+\section{Discussion}\label{discussion-2}
+
+\section{Conclusion}\label{conclusion-2}
+
+\section{Acknowledgements}\label{acknowledgements-3}
+
+\chapter{Paper Title}\label{paper-title-3}
+
+\section{Abstract}\label{abstract-4}
+
+\section{Keywords}\label{keywords-4}
+
+\section{Introduction}\label{introduction-3}
+
+\section{Methods}\label{methods-3}
+
+\section{Results}\label{results-3}
+
+\section{Discussion}\label{discussion-3}
+
+\section{Conclusion}\label{conclusion-3}
+
+\section{Acknowledgements}\label{acknowledgements-4}
+
+\chapter{Discussion}\label{discussion-4}
+
+\section{Conclusions}\label{conclusions}
 
 
 \end{document}

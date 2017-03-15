@@ -1,0 +1,41 @@
+---
+knit: bookdown::preview_chapter
+---
+
+# Paper Title
+
+## Abstract
+
+## Keywords
+
+## Introduction
+
+## Methods
+
+## Results
+
+example  plot:
+
+```{r}
+
+library(ggplot2)
+
+qplot(diamonds$clarity)
+
+```
+
+Example table.
+
+```{r}
+
+knitr::kable(head(mtcars),
+             caption = "testing!")
+
+```
+
+
+## Discussion
+
+## Conclusion
+
+## Acknowledgements

@@ -1,0 +1,11 @@
+---
+knit: bookdown::preview_chapter
+---
+  
+# Acknowledgements
+
+First and foremost, my thanks go to ...
+
+...
+
+Last, and certainly not least, I thanks..

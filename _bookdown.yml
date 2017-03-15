@@ -1,11 +1,17 @@
 book_filename: "Thesisdown-tufte"
 chapter_name: "Chapter " 
 rmd_files: [
-  "00-copyright.Rmd",
-  "01-intro.Rmd",
-  "02-literature.Rmd",
-  "03-method.Rmd",
-  "04-application.Rmd",
-  "05-summary.Rmd",
-  "06-references.Rmd"
+  "copyright.Rmd",
+  "dedication.Rmd",
+  "abstract.Rmd",
+  "keywords.Rmd",
+  "acknowledgements.Rmd",
+  "introduction.Rmd",
+  "literature-review.Rmd",
+  "paper-1.Rmd",
+  "paper-2.Rmd",
+  "paper-3.Rmd",
+  "paper-4.Rmd",
+  "discussion.Rmd",
+  "references.Rmd"
 ]
