@@ -1,1 +1,20 @@
 \usepackage{booktabs}
+\usepackage{amsthm}
+\makeatletter
+\def\thm@space@setup{%
+  \thm@preskip=8pt plus 2pt minus 4pt
+  \thm@postskip=\thm@preskip
+}
+\makeatother
+
+%% lifted from https://tex.stackexchange.com/questions/68960/defining-new-subsubsection-not-working
+
+\renewcommand*\thesection{\arabic{section}.0}
+\renewcommand*\thesubsection{\arabic{section}.\arabic{subsection}}
+\renewcommand*\thesubsubsection{%
+  \arabic{section}.\arabic{subsection}.\arabic{subsubsection}%
+}
+
+
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}

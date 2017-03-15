@@ -1,4 +1,4 @@
-\documentclass[]{article}
+\documentclass[]{book}
 \usepackage{lmodern}
 \usepackage{amssymb,amsmath}
 \usepackage{ifxetex,ifluatex}
@@ -123,26 +123,45 @@
   \predate{}\postdate{}
 
 \usepackage{booktabs}
+\usepackage{amsthm}
+\makeatletter
+\def\thm@space@setup{%
+  \thm@preskip=8pt plus 2pt minus 4pt
+  \thm@postskip=\thm@preskip
+}
+\makeatother
+
+%% lifted from https://tex.stackexchange.com/questions/68960/defining-new-subsubsection-not-working
+
+\renewcommand*\thesection{\arabic{section}.0}
+\renewcommand*\thesubsection{\arabic{section}.\arabic{subsection}}
+\renewcommand*\thesubsubsection{%
+  \arabic{section}.\arabic{subsection}.\arabic{subsubsection}%
+}
+
+
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
 
 \usepackage{amsthm}
-\newtheorem{theorem}{Theorem}[section]
-\newtheorem{lemma}{Lemma}[section]
+\newtheorem{theorem}{Theorem}[chapter]
+\newtheorem{lemma}{Lemma}[chapter]
 \theoremstyle{definition}
-\newtheorem{definition}{Definition}[section]
-\newtheorem{corollary}{Corollary}[section]
-\newtheorem{proposition}{Proposition}[section]
+\newtheorem{definition}{Definition}[chapter]
+\newtheorem{corollary}{Corollary}[chapter]
+\newtheorem{proposition}{Proposition}[chapter]
 \theoremstyle{definition}
-\newtheorem{example}{Example}[section]
+\newtheorem{example}{Example}[chapter]
 \theoremstyle{remark}
 \newtheorem*{remark}{Remark}
 \begin{document}
 
 {
-\setcounter{tocdepth}{2}
+\setcounter{tocdepth}{1}
 \tableofcontents
 }
-\section{Copyright in relation to This
-Thesis}\label{copyright-in-relation-to-this-thesis}
+\chapter{Copyright in relation to this
+thesis}\label{copyright-in-relation-to-this-thesis}
 
 \copyright Copyright 2017 by John Doe. All rights reserved.
 
@@ -158,7 +177,7 @@ where due reference is made.
 
 \textbf{Date}
 
-\section{Introduction}\label{intro}
+\chapter{Introduction}\label{intro}
 
 You can label chapter and section titles using \texttt{\{\#label\}}
 after them, e.g., we can reference Chapter \ref{intro}. If you do not
@@ -237,23 +256,21 @@ You can write citations, too. For example, we are using the
 \textbf{bookdown} package \citep{R-bookdown} in this sample book, which
 was built on top of R Markdown and \textbf{knitr} \citep{xie2015}.
 
-\section{Literature}\label{literature}
+\chapter{Literature Review}\label{literature-review}
 
-Here is a review of existing methods.
-
-\section{Methods}\label{methods}
+\chapter{Methods}\label{methods}
 
 We describe our methods in this chapter.
 
-\section{Applications}\label{applications}
+\chapter{Applications}\label{applications}
 
 Some \emph{significant} applications are demonstrated in this chapter.
 
-\subsection{Example one}\label{example-one}
+\section{Example one}\label{example-one}
 
-\subsection{Example two}\label{example-two}
+\section{Example two}\label{example-two}
 
-\section{Final Words}\label{final-words}
+\chapter{Final Words}\label{final-words}
 
 We have finished a nice book.
 
