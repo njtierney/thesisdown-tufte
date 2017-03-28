@@ -1,6 +1,6 @@
 --- 
-title: "A Minimal Example of writing a thesis using bookdown and tufte"
-author: "Nicholas Tierney"
+title: "A Minimal Thesis Using Bookdown and Tufte"
+author: "Your Name"
 date: "2017-03-29"
 site: bookdown::bookdown_site
 documentclass: book
