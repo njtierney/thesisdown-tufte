@@ -1,13 +1,14 @@
 bookdown::pdf_book:
-  keep_tex: yes
-  number_sections: yes
   pandoc_args: [
     "--chapters"
   ]
   includes:
     in_header: preamble.tex
+    before_body: doc_preface.tex
+    after_body: appendix.tex
   latex_engine: xelatex
   citation_package: natbib
+  keep_tex: yes
 bookdown::epub_book: default
 bookdown::gitbook:
   css: style.css

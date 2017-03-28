@@ -29,46 +29,6 @@
 \urlstyle{same}  % don't use monospace font for urls
 \usepackage{natbib}
 \bibliographystyle{plainnat}
-\usepackage{color}
-\usepackage{fancyvrb}
-\newcommand{\VerbBar}{|}
-\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
-\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
-% Add ',fontsize=\small' for more characters per line
-\usepackage{framed}
-\definecolor{shadecolor}{RGB}{248,248,248}
-\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
-\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{{#1}}}}
-\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{{#1}}}
-\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{{#1}}}
-\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{{#1}}}
-\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{{#1}}}
-\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{{#1}}}
-\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{{#1}}}
-\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{{#1}}}
-\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{{#1}}}
-\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{{#1}}}
-\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{{#1}}}
-\newcommand{\ImportTok}[1]{{#1}}
-\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{{#1}}}}
-\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{{#1}}}}}
-\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{{#1}}}}}
-\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{{#1}}}}}
-\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{{#1}}}
-\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{{#1}}}
-\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{{#1}}}
-\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{{#1}}}}
-\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{{#1}}}}
-\newcommand{\BuiltInTok}[1]{{#1}}
-\newcommand{\ExtensionTok}[1]{{#1}}
-\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{{#1}}}}
-\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{{#1}}}
-\newcommand{\RegionMarkerTok}[1]{{#1}}
-\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{{#1}}}}}
-\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{{#1}}}}}
-\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{{#1}}}
-\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{{#1}}}}
-\newcommand{\NormalTok}[1]{{#1}}
 \usepackage{longtable,booktabs}
 \usepackage{graphicx,grffile}
 \makeatletter
@@ -139,21 +99,9 @@
   \arabic{section}.\arabic{subsection}.\arabic{subsubsection}%
 }
 
-
 \setcounter{secnumdepth}{3}
 \setcounter{tocdepth}{3}
 
-\usepackage{amsthm}
-\newtheorem{theorem}{Theorem}[chapter]
-\newtheorem{lemma}{Lemma}[chapter]
-\theoremstyle{definition}
-\newtheorem{definition}{Definition}[chapter]
-\newtheorem{corollary}{Corollary}[chapter]
-\newtheorem{proposition}{Proposition}[chapter]
-\theoremstyle{definition}
-\newtheorem{example}{Example}[chapter]
-\theoremstyle{remark}
-\newtheorem*{remark}{Remark}
 \begin{document}
 
 {
@@ -162,241 +110,29 @@
 }
 \chapter{Copyright}\label{copyright}
 
-\textbf{Copyright in relation to this thesis}
-
-\copyright Copyright 2017 by John Doe. All rights reserved.
-
-\textbf{Statement of Original Authorship}
-
-The Work contained in this thesis has not been previously submitted to
-meet requirements for an award at this or any other higher education
-institution. To the best of my knowledge and belief, the thesis contains
-no material previously published or written by another person except
-where due reference is made.
-
-\textbf{Signature}
-
-\textbf{Date}
-
 \chapter{Dedication}\label{dedication}
-
-This thesis is dedicated to \ldots{}.
 
 \chapter{Abstract}\label{abstract}
 
 \chapter{Keywords}\label{keywords}
 
-Statistics, Mathematics, Magic, Harry Potter, Wand creation, Olivander,
-Latin
-
 \chapter{Acknowledgements}\label{acknowledgements}
 
-First and foremost, my thanks go to \ldots{}
-
-\ldots{}
-
-Last, and certainly not least, I thanks..
-
 \chapter{Introduction}\label{intro}
-
-You can label chapter and section titles using \texttt{\{\#label\}}
-after them, e.g., we can reference Chapter \ref{intro}. If you do not
-manually label them, there will be automatic labels anyway, e.g.,
-Chapter \ref{methods}.
-
-Figures and tables with captions will be placed in \texttt{figure} and
-\texttt{table} environments, respectively.
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\KeywordTok{par}\NormalTok{(}\DataTypeTok{mar =} \KeywordTok{c}\NormalTok{(}\DecValTok{4}\NormalTok{, }\DecValTok{4}\NormalTok{, .}\DecValTok{1}\NormalTok{, .}\DecValTok{1}\NormalTok{))}
-\KeywordTok{plot}\NormalTok{(pressure, }\DataTypeTok{type =} \StringTok{'b'}\NormalTok{, }\DataTypeTok{pch =} \DecValTok{19}\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{figure}
-
-{\centering \includegraphics[width=0.8\linewidth]{Thesisdown-tufte_files/figure-latex/nice-fig-1} 
-
-}
-
-\caption{Here is a nice figure!}\label{fig:nice-fig}
-\end{figure}
-
-Reference a figure by its code chunk label with the \texttt{fig:}
-prefix, e.g., see Figure \ref{fig:nice-fig}. Similarly, you can
-reference tables generated from \texttt{knitr::kable()}, e.g., see Table
-\ref{tab:nice-tab}.
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{knitr::}\KeywordTok{kable}\NormalTok{(}
-  \KeywordTok{head}\NormalTok{(iris, }\DecValTok{20}\NormalTok{), }\DataTypeTok{caption =} \StringTok{'Here is a nice table!'}\NormalTok{,}
-  \DataTypeTok{booktabs =} \OtherTok{TRUE}
-\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{table}
-
-\caption{\label{tab:nice-tab}Here is a nice table!}
-\centering
-\begin{tabular}[t]{rrrrl}
-\toprule
-Sepal.Length & Sepal.Width & Petal.Length & Petal.Width & Species\\
-\midrule
-5.1 & 3.5 & 1.4 & 0.2 & setosa\\
-4.9 & 3.0 & 1.4 & 0.2 & setosa\\
-4.7 & 3.2 & 1.3 & 0.2 & setosa\\
-4.6 & 3.1 & 1.5 & 0.2 & setosa\\
-5.0 & 3.6 & 1.4 & 0.2 & setosa\\
-\addlinespace
-5.4 & 3.9 & 1.7 & 0.4 & setosa\\
-4.6 & 3.4 & 1.4 & 0.3 & setosa\\
-5.0 & 3.4 & 1.5 & 0.2 & setosa\\
-4.4 & 2.9 & 1.4 & 0.2 & setosa\\
-4.9 & 3.1 & 1.5 & 0.1 & setosa\\
-\addlinespace
-5.4 & 3.7 & 1.5 & 0.2 & setosa\\
-4.8 & 3.4 & 1.6 & 0.2 & setosa\\
-4.8 & 3.0 & 1.4 & 0.1 & setosa\\
-4.3 & 3.0 & 1.1 & 0.1 & setosa\\
-5.8 & 4.0 & 1.2 & 0.2 & setosa\\
-\addlinespace
-5.7 & 4.4 & 1.5 & 0.4 & setosa\\
-5.4 & 3.9 & 1.3 & 0.4 & setosa\\
-5.1 & 3.5 & 1.4 & 0.3 & setosa\\
-5.7 & 3.8 & 1.7 & 0.3 & setosa\\
-5.1 & 3.8 & 1.5 & 0.3 & setosa\\
-\bottomrule
-\end{tabular}
-\end{table}
-
-You can write citations, too. For example, we are using the
-\textbf{bookdown} package \citep{R-bookdown} in this sample book, which
-was built on top of R Markdown and \textbf{knitr} \citep{xie2015}.
 
 \chapter{Literature Review}\label{literature-review}
 
 \chapter{Paper Title}\label{paper-title}
 
-\section{Abstract}\label{abstract-1}
-
-\section{Keywords}\label{keywords-1}
-
-\section{Introduction}\label{introduction}
-
-\section{Methods}\label{methods}
-
-\section{Results}\label{results}
-
-example plot:
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\KeywordTok{library}\NormalTok{(ggplot2)}
-
-\KeywordTok{qplot}\NormalTok{(diamonds$clarity)}
-\end{Highlighting}
-\end{Shaded}
-
-\includegraphics{Thesisdown-tufte_files/figure-latex/unnamed-chunk-1-1.pdf}
-
-Example table.
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{knitr::}\KeywordTok{kable}\NormalTok{(}\KeywordTok{head}\NormalTok{(mtcars),}
-             \DataTypeTok{caption =} \StringTok{"testing!"}\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{table}
-
-\caption{\label{tab:unnamed-chunk-2}testing!}
-\centering
-\begin{tabular}[t]{l|r|r|r|r|r|r|r|r|r|r|r}
-\hline
-  & mpg & cyl & disp & hp & drat & wt & qsec & vs & am & gear & carb\\
-\hline
-Mazda RX4 & 21.0 & 6 & 160 & 110 & 3.90 & 2.620 & 16.46 & 0 & 1 & 4 & 4\\
-\hline
-Mazda RX4 Wag & 21.0 & 6 & 160 & 110 & 3.90 & 2.875 & 17.02 & 0 & 1 & 4 & 4\\
-\hline
-Datsun 710 & 22.8 & 4 & 108 & 93 & 3.85 & 2.320 & 18.61 & 1 & 1 & 4 & 1\\
-\hline
-Hornet 4 Drive & 21.4 & 6 & 258 & 110 & 3.08 & 3.215 & 19.44 & 1 & 0 & 3 & 1\\
-\hline
-Hornet Sportabout & 18.7 & 8 & 360 & 175 & 3.15 & 3.440 & 17.02 & 0 & 0 & 3 & 2\\
-\hline
-Valiant & 18.1 & 6 & 225 & 105 & 2.76 & 3.460 & 20.22 & 1 & 0 & 3 & 1\\
-\hline
-\end{tabular}
-\end{table}
-
-\section{Discussion}\label{discussion}
-
-\section{Conclusion}\label{conclusion}
-
-\section{Acknowledgements}\label{acknowledgements-1}
-
 \chapter{Paper Title}\label{paper-title-1}
-
-\section{Abstract}\label{abstract-2}
-
-\section{Keywords}\label{keywords-2}
-
-\section{Introduction}\label{introduction-1}
-
-\section{Methods}\label{methods-1}
-
-\section{Results}\label{results-1}
-
-\section{Discussion}\label{discussion-1}
-
-\section{Conclusion}\label{conclusion-1}
-
-\section{Acknowledgements}\label{acknowledgements-2}
 
 \chapter{Paper Title}\label{paper-title-2}
 
-\section{Abstract}\label{abstract-3}
-
-\section{Keywords}\label{keywords-3}
-
-\section{Introduction}\label{introduction-2}
-
-\section{Methods}\label{methods-2}
-
-\section{Results}\label{results-2}
-
-\section{Discussion}\label{discussion-2}
-
-\section{Conclusion}\label{conclusion-2}
-
-\section{Acknowledgements}\label{acknowledgements-3}
-
 \chapter{Paper Title}\label{paper-title-3}
 
-\section{Abstract}\label{abstract-4}
+\chapter{Discussion}\label{discussion}
 
-\section{Keywords}\label{keywords-4}
-
-\section{Introduction}\label{introduction-3}
-
-\section{Methods}\label{methods-3}
-
-\section{Results}\label{results-3}
-
-\section{Discussion}\label{discussion-3}
-
-\section{Conclusion}\label{conclusion-3}
-
-\section{Acknowledgements}\label{acknowledgements-4}
-
-\chapter{Discussion}\label{discussion-4}
-
-\section{Conclusions}\label{conclusions}
+\chapter{Placeholder}\label{placeholder}
 
 
 \end{document}

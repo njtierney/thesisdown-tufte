@@ -1,7 +1,7 @@
 --- 
 title: "A Minimal Example of writing a thesis using bookdown and tufte"
 author: "Nicholas Tierney"
-date: "`r Sys.Date()`"
+date: "2017-03-29"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib, packages.bib]
@@ -17,9 +17,4 @@ output:
 ---
 
 
-```{r include=FALSE}
-# automatically create a bib database for R packages
-knitr::write_bib(c(
-  .packages(), 'bookdown', 'knitr', 'rmarkdown'
-), 'packages.bib')
-```
+

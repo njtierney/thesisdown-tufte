@@ -1,17 +1,5 @@
 book_filename: "Thesisdown-tufte"
-chapter_name: "Chapter " 
-rmd_files: [
-  "copyright.Rmd",
-  "dedication.Rmd",
-  "abstract.Rmd",
-  "keywords.Rmd",
-  "acknowledgements.Rmd",
-  "introduction.Rmd",
-  "literature-review.Rmd",
-  "paper-1.Rmd",
-  "paper-2.Rmd",
-  "paper-3.Rmd",
-  "paper-4.Rmd",
-  "discussion.Rmd",
-  "references.Rmd"
-]
+# chapter_name: "Chapter " 
+output_dir: docs
+clean: [packages.bib, bookdown.bbl]
+new_session: yes
