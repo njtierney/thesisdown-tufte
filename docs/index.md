@@ -10,6 +10,7 @@ link-citations: yes
 description: "This is a minimal example of using the bookdown package to write a thesis using tufte formatting"
 output: 
   bookdown::tufte_book2:
+    toc: true
     includes:
       in_header: preamble.tex
       before_body: doc_preface.tex
